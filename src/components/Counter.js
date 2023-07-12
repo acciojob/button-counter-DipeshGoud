@@ -1,4 +1,4 @@
-import react from "react";
+import React from "react";
 
 let count = 0;
     let increaseCount = () =>{
