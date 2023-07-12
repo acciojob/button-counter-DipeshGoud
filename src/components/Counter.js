@@ -1,18 +1,21 @@
-import React from "react";
-
-let count = 0;
-    let increaseCount = () =>{
-        count++;
-    }
+import React, { useState } from "react";
 
 const Counter = () => {
-    return (
-        <div>
-        <p>Button clicked {count} times</p>
-        <br></br>
-        <button id="clickMe" onClick={increaseCount}>Click me</button>
-        </div>
-    )
-}
+  const [count, setCount] = useState(0);
+
+  const increaseCount = () => {
+    setCount(count + 1);
+  };
+
+  return (
+    <div>
+      <p>Button clicked {count} times</p>
+      <br></br>
+      <button id="clickMe" onClick={increaseCount}>
+        Click me
+      </button>
+    </div>
+  );
+};
 
 export default Counter;
