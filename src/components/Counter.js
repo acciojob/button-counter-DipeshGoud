@@ -8,7 +8,7 @@ let count = 0;
 const Counter = () => {
     return (
         <div>
-        <p>Button Clicked {count} times</p>
+        <p>Button clicked {count} times</p>
         <br></br>
         <button id="clickMe" onClick={increaseCount}>Click me</button>
         </div>
